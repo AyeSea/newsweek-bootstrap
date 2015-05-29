@@ -11,26 +11,91 @@
 
 	<body>
 		<!-- User Authentication Bar (large) -->		
-		<div class="container hidden-md">
+		<div class="container auth-bar hidden-xs hidden-sm">
+
+			<h5 class="text-center">Get Full Digital Access When You Sign Up for Home Delivery. <a href="#">More Info</a></h5>
+			
+			<ul class="auth-menu-large">
+				<li><button type="button" class="btn btn-register">Register</button></li>
+				<li><button type="button" class="btn btn-signin">Sign In</button></li>
+			</ul>
+
 		</div>
 	
 		<!-- Site Header -->
-		<header class="container-fluid">
+		<header class="container-fluid site-header">
 
 			<!-- Main Header Content (wrapped for containing) -->
 			<div class="fluid-wrap">
 
 				<!-- Row - Header Content 1 (Edition, Search, Social) -->
 				<div class="row">
+					
+					<!-- Column - Meta-Links (large) -->
+					<div class="col-md-7 col-md-offset-5 hidden-xs hidden-sm">
+
+						<ul class="meta-links-large">
+							<li><a href="#">US Edition</a></li>
+							<li><a href="#">Social</a></li>
+							<li><a href="#"><input type="search" placeholder="Search for News"></a></li>
+							<li><a href="#"><button type="button" class="btn">Try Newsweek</button></a></li>
+						</ul>
+
+					</div>					
+				
 				</div>
 		
 				<!-- Row - Header Content 2 (Logo, Site Nav) -->
 				<div class="row">
+
+					<!-- Column - Site Logo -->
+					<div class="col-lg-4 col-md-3 col-xs-6">
+
+						<a class="site-logo" href="#">
+							<img src="images/logo.png">
+						</a>
+
+					</div>
+					
+					<!-- Column - Meta-Links (small) -->
+					<div class="col-xs-6 hidden-md hidden-lg">
+						<ul class="meta-links-small">
+							<li><img src="images/us-edition-icon.png" alt="U.S. Edition"></li>
+							<li><img src="images/search-icon.png" alt="Search"></li>
+							<li><img src="images/dropdown-icon.png" alt="See More"></li>
+						</ul>
+					</div>
+
+					<!-- Column - Header Nav Links -->
+					<div class="col-lg-8 col-md-9 hidden-xs hidden-sm">
+
+						<ul class="header-nav">
+							<li><a href="#">U.S.</a></li>
+							<li><a href="#">World</a></li>
+							<li><a href="#">Tech &#38; Science</a></li>
+							<li><a href="#">Culture</a></li>
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Career</a></li>
+							<li><a href="#">News Feed</a></li>
+							<li><a href="#">This Week&#8217;s Edition</a></li>
+						</ul>
+						
+					</div>
+					
 				</div>
 
 			</div>
 
 		</header>
+
+		<!-- User Authentication Bar (small) -->		
+		<div class="container auth-bar hidden-md hidden-lg">
+			<div class="row auth-menu-small">
+				<div class="col-xs-5"><a href="#">Register</a></div>
+				<div class="col-xs-5 col-xs-offset-2"><a href="#">Sign in</a></div>
+			</div>
+
+		</div>
 
 		<!-- Contents -->
 		<div class="container">

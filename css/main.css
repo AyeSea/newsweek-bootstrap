@@ -1,12 +1,211 @@
-/* Shared Styling */
+/* 
+	=================================
+	General Styling
+	=================================
+*/
+/* Resets on top of Normalize.css */
+li {
+	list-style: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Shared */
 
 .fluid-wrap {
 	max-width: 1200px;
-	padding: 0 22px;
+	padding-left: 22px;
+	padding-right: 22px;
+	margin: 0 auto;
 }
+
+/* 
+	=================================
+	Top (User Auth Bar + Header)
+	=================================
+*/
+
+/* User Authentication Bar (large) */
+.auth-bar > h5 {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.auth-bar > h5 > a {
+	color: #f00;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 5px;
+}
+
+.auth-menu-large {
+	margin-top: -20px;
+	margin-bottom: -1px;
+	float: right;
+}
+
+.auth-menu-large > li {
+	float: left;
+}
+
+.auth-menu-large button {
+	font-style: italic;
+	border-radius: 0;
+	padding: 3.5px 12px;
+}
+
+.btn-register {
+	background: #000;
+	color: #fff;
+}
+
+.btn-signin {
+	background: transparent;
+}
+
+/* Site Header */
+.site-header {
+	border-top: 4px solid #f00;
+	border-bottom: 1px solid #f00;
+}
+
+/* Meta Links - Large */
+.meta-links-large {
+	float: right;
+	margin-bottom: -10px;
+}
+
+.meta-links-large > li {
+	display: inline-block;
+	margin-left: 5px;
+	padding-left: 22.5px;
+}
+
+.meta-links-large > li > a {
+	font-size: 12px;
+	color: #f00;
+}
+
+.meta-links-large > li:last-child > a {
+	color: #fff;
+}
+
+.meta-links-large > li:last-child button {
+	background-color: #f00;
+}
+
+/* Meta Links - Small */
+.meta-links-small {
+	float: right;
+	margin-top: 17.5px;
+}
+
+.meta-links-small > li {
+	float: left;
+	padding-left: 15px;
+}
+
+
+/* Site Logo */
+.site-logo {
+	float: left;
+	max-width: 400px;
+}
+
+.site-logo > img {
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* Header Nav Links */
+.header-nav {
+	float: right;
+}
+
+.header-nav > li {
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 45px;
+	padding-left: 2.25px;
+	padding-right: 2.25px;
+}
+
+.header-nav > li > a {
+	color: #f00;	
+}
+
+.header-nav > li:last-child > a {
+	color: #777;
+}
+
+.header-nav > li > a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.header-nav > li:last-child:hover {
+	background-color: yellow;
+}
+
+/* User Authentication Bar (small) */
+.auth-menu-small {
+	text-align: center;
+	padding: 5px 0;
+}
+
+.auth-menu-small > .col-xs-5 {
+	border-bottom: 1px solid #777;
+}
+
+.auth-menu-small > .col-xs-5:hover {
+	background: #777;
+} 
+
+.auth-menu-small a {
+	display: block;
+	color: #777;
+}
+
+.auth-menu-small a:hover {
+	color: #fff;
+}
+
+/* 
+	=================================
+	Media Queries
+	=================================
+*/
 
 @media (min-width: 992px) {
 	.fluid-wrap {
 		padding: 0 15px;
 	}
+	
+}
+
+@media (max-width: 1090px) {
+	.site-logo > img {
+		max-width: 230px;
+		min-width: 215px;
+		margin-top: 25px;
+	}
+}
+
+@media (max-width: 991px) {
+	.site-header {
+		border-top: none;
+	}
+
+	.site-logo > img {
+		vertical-align: middle;
+		margin: 14px 0;
+	}
+
 }
