@@ -214,6 +214,215 @@ a:hover {
 
 /* 
 	=================================
+	R1C1 - Headlines, Featured Articles
+	=================================
+*/
+
+/* Image of Featured Article 1 */
+#primary-article-img {
+	width: 100%;
+	height: 100%;
+	border-bottom: 3px solid #ff0000;
+}
+
+#primary-article-category {
+	display: block;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#primary-article-category > a {
+	display: inline-block;
+	background-color: #ff0000;
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 15%;
+}
+
+/* 
+	=================================
+	R1C1, R2C1 - News Feed
+	=================================
+*/
+
+/* Shared */
+.feed-header {
+	/* For News Feed and Big Shot sections */
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #ff0000;
+}
+
+/* News Feed */
+.news-feed {
+	border-right: 1px solid #c8c8c8;
+}
+
+.news-header {
+	margin-top: 25px;
+	font-size: 20px;
+}
+
+.news-feed-list > li {
+	border-bottom: 2px dotted #c8c8c8;
+	padding: 10px 0;
+}
+
+.category{
+	display: inline;
+	text-transform: capitalize;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: bold;
+}
+
+.feed-article-title {
+	display: inline;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.category > a {
+	color: #000;
+}
+
+.feed-article-title > a {
+	color: #333;
+}
+
+.category > a:hover,
+.feed-article-title > a:hover {
+	color: #ff0000;
+}
+
+/* 
+	=================================
+	R1C1, R2C2 - Featured Articles
+	=================================
+*/
+
+.featured-articles-list {
+
+}
+
+.featured-articles-list > li {
+	float: left;
+	border-bottom: 1px solid #c8c8c8;
+	padding: 25px 0;
+}
+
+/* Primary Featured Article */
+
+#primary-article-header {
+	text-align: left;
+	font-size: 38px;
+	line-height: 38px;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+
+#primary-article-header > a {
+	color: #000;
+}
+
+#primary-article-header:hover {
+	text-decoration: underline;
+}
+
+#primary-article-desc {
+	font-size: 17px;
+	line-height: 17px;
+	color: #5a5a5a;
+}
+
+#primary-article-related:before {
+	content: "■ ";
+	color: #ff0000;
+}
+
+#primary-article-related > a {
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+}
+
+#primary-article-related > a:hover {
+	text-decoration: underline;
+}
+
+/* Other Featured Articles */
+.featured-article-img {
+	float: left;
+	width: 47%;
+	height: 100%;
+	margin-right: 2%
+}
+
+
+.featured-detail-container {
+	width: 47%;
+	height: 100%;
+	float: right;
+}
+
+
+.category-header {
+	color: #ff0000;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.primary-category {
+	font-size: 20px;
+}
+
+.featured-article-header {
+	color: #000;
+	font-size: 23px;
+	font-weight: bold;
+	line-height: 24px;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+.featured-article-header:hover {
+	text-decoration: underline;
+}
+
+.featured-article-desc {
+	margin: 7.5px 0;
+	font-size: 17px;
+	line-height: 17px;
+	color: #5a5a5a;	
+	text-align: left;
+}
+
+.related-text {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #20c3f3;
+}
+
+.related-article-title {
+	color: #000;
+	text-transform: capitalize;
+	font-size: 13px;
+	line-height: 13px;
+}
+
+.related-article-title:hover {
+	text-decoration: underline;
+}
+
+/* 
+	=================================
 	R1C2 - Sidebar (ads, etc.)
 	=================================
 */
@@ -477,4 +686,39 @@ a:hover {
 		margin: 14px 0;
 	}
 
+}
+
+@media (max-width: 769px) {
+	.primary-category {
+		color: #ff0000;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 22px;
+		text-transform: uppercase;
+	}
+
+#primary-article-header {
+	color: #000;
+	font-size: 23px;
+	font-weight: bold;
+	line-height: 24px;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+ .featured-article-img {
+ 		display: block;
+ 		float: left;
+		width: 100%;
+	}
+
+	.featured-detail-container {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	
+	.related-text {
+		display: none;
+	}
 }
