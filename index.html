@@ -60,9 +60,9 @@
 					<!-- Column - Meta-Links (small) -->
 					<div class="col-xs-6 hidden-md hidden-lg">
 						<ul class="meta-links-small">
-							<li><img src="images/us-edition-icon.png" alt="U.S. Edition"></li>
-							<li><img src="images/search-icon.png" alt="Search"></li>
-							<li><img src="images/dropdown-icon.png" alt="See More"></li>
+							<li><a href="#"><img src="images/us-edition-icon.png" alt="U.S. Edition"></a></li>
+							<li><a href="#"><img src="images/search-icon.png" alt="Search"></a></li>
+							<li><a href="#"><img src="images/dropdown-icon.png" alt="See More"></a></li>
 						</ul>
 					</div>
 
@@ -89,7 +89,7 @@
 		</header>
 
 		<!-- User Authentication Bar (small) -->		
-		<div class="container auth-bar hidden-md hidden-lg">
+		<div class="fluid-container hidden-md hidden-lg">
 			<div class="row auth-menu-small">
 				<div class="col-xs-5"><a href="#">Register</a></div>
 				<div class="col-xs-5 col-xs-offset-2"><a href="#">Sign in</a></div>
@@ -97,26 +97,198 @@
 
 		</div>
 
-		<!-- Contents -->
-		<div class="container">
-			
-			<!-- User Authentication Bar (small) -->	
-			<div class="row">
-				<div class="col-md-6"></div>
-				<div class="col-md-6"></div>
-			</div>
+		<!-- Main Content -->
+		<div class="container main-shell">
 
-			<!-- Row - Headlines, Featured Articles, Sidebar (ads, etc.) -->
+			<!-- R1- Headlines, Featured Articles, Sidebar (ads, etc.) -->
 			<div class="row">
 					
-				<!-- Column 1 -->
-				<div class="col-lg-9 col-md-8 col-sm-8">
+				<!-- R1C1 - Headlines, Featured Articles -->
+				<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+
 				</div>
 				
-				<!-- Column 2 -->
-				<aside class="col-lg-3 col-md-4 col-sm-4"></aside>
+				<!-- R1C2 - Sidebar (ads, etc.) -->
+				<aside class="col-lg-3 col-md-4 hidden-sm col-sm-12 col-xs-12">
+					
+					<!-- Follow Links -->
+					<div class="sidebar-content">
+						<div class="onsite-box social-box">
+
+								<h2 class="onsite-box-header follow-header">
+									Follow Newsweek
+								</h2>
+
+								<div class="social-links">
+									<ul>
+										<li><a href="">EML</a></li>
+										<li><a href="">FB</a></li>
+										<li><a href="">TWT</a></li>
+										<li><a href="">LNK</a></li>
+										<li><a href="">GGL</a></li>
+										<li><a href="">TMB</a></li>
+										<li><a href="">RSS</a></li>										
+									</ul>
+								</div>
+							
+								<div class="follow-email">
+									<input type="text" placeholder="Enter Your Email">
+									<button type="button" class="btn btn-sm">Sign Up</button>
+								</div>
+
+						</div>
+					</div>
+					
+					<!-- Sponsor Ad 1 -->
+					<div class="sidebar-content">
+						
+						<div class="sponsor-ad">
+							<h2 class="ad-category">Educational Insight <span class="sponsored-text">Sponsored</span></h2>
+							
+							<a href="#">
+								<img class="ad-img" src="images/ad-1.jpg">
+
+								<h3 class="ad-title">Choosing a Business School - What to Consider and What to Ask</h3>
+							</a>
+
+							<p class="ad-desc">
+								Attending a Business School represents a big investment and if you get it right, a big reward. What things do you need to consider when choosing and what questions do you need to ask?
+							</p>
+						</div>
+
+					</div>
+
+					<!-- Subscribe Box -->
+					<div class="sidebar-content">
+						<div class="onsite-box subscribe-box">
+							<a href="#">
+								<h2 class="onsite-box-header subscribe-header">Subscribe</h2>
+								
+								<img class="ad-img" src="images/subscribe.png">
+								
+								<div class="whitespace">
+									<div class="subscribe-details">
+										<h3>&#36;1.25 per week</h3>
+										<h4>Print and Digital</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</div>
+					
+					<!-- Most Shared Box -->
+					<div class="sidebar-content">
+						<div class="onsite-box action-box">
+
+							<h2 class="onsite-box-header action-header">Most Shared</h2>
+							
+							<ul class="action-list">
+								<li>
+									<h3 class="action-item-header"><a href="#">The Booming Market for Breast Milk</a></h3>
+									<h4 class="share-count">Shares: 22.1K</h4>
+								</li>
+
+								<li>
+									<h3 class="action-item-header"><a href="#">In Honor of National Burger Day, Meet the 20,000&#8208;Calorie Hamburger</a></h3>
+									<h4 class="share-count">Shares: 4.4K</h4>
+								</li>
+
+								<li>
+									<h3 class="action-item-header"><a href="#">56 Reported Shot Over Memorial Day Weekend in Chicago</a></h3>
+									<h4 class="share-count">Shares: 1.7K</h4>
+								</li>
+
+								<li>
+									<h3 class="action-item-header"><a href="#">Why Does Your Chocolate Taste So Bad?</a></h3>
+									<h4 class="share-count">Shares: 1K</h4>
+								</li>
+
+								<li>
+									<h3 class="action-item-header"><a href="#">Gender Imbalance&#58; How China's One-Child Law Backfired on Men</a></h3>
+									<h4 class="share-count">Shares: 401</h4>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+
+					<!-- Most Read Box -->
+					<div class="sidebar-content">
+						<div class="onsite-box action-box">
+
+							<h2 class="onsite-box-header action-header">Most Read</h2>
+							
+							<ul class="action-list">
+								<li>
+									<h3 class="action-item-header"><a href="#">The Booming Market for Breast Milk</a></h3>
+								</li>
+
+								<li>
+									<h3 class="action-item-header"><a href="#">In Honor of National Burger Day, Meet the 20,000&#8208;Calorie Hamburger</a></h3>
+								</li>
+
+								<li>
+									<h3 class="action-item-header"><a href="#">56 Reported Shot Over Memorial Day Weekend in Chicago</a></h3>
+								</li>
+
+								<li>
+									<h3 class="action-item-header"><a href="#">Millennial College Graduates&#58; Young, Educated, Jobless</a></h3>
+								</li>
+
+								<li>
+									<h3 class="action-item-header"><a href="#">Gender Imbalance&#58; How China's One-Child Law Backfired on Men</a></h3>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+
+					<!-- Subscribe Box -->
+					<div class="sidebar-content">
+						<div class="onsite-box subscribe-box">
+							<a href="#">
+								<h2 class="onsite-box-header subscribe-header">Subscribe</h2>
+								
+								<img class="ad-img" src="images/subscribe.png">
+								
+								<div class="whitespace">
+									<div class="subscribe-details">
+										<h3>&#36;1.25 per week</h3>
+										<h4>Print and Digital</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</div>
+
+					<!-- Sponsor Ad 2 -->
+					<div class="sidebar-content">
+						
+						<div class="sponsor-ad">
+							<h2 class="ad-category">Surgical Insight <span class="sponsored-text">Sponsored</span></h2>
+							
+							<a href="#">
+								<img class="ad-img" src="images/ad-2.png">
+
+								<h3 class="ad-title">Premier Spinal Surgeons and other Medical Specialties</h3>
+							</a>
+
+							<p class="ad-desc">
+								What makes a Great Spine, Orthopedic, Bariatric or Vision surgeon and what difference do they make to people’s lives?
+							</p>
+						</div>
+
+					</div>
+
+				</aside>
 
 			</div>
+
+
 
 			<!-- Row - Big Shots, The Latest News in Pictures -->
 			<div class="row">

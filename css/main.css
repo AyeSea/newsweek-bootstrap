@@ -4,6 +4,17 @@
 	=================================
 */
 /* Resets on top of Normalize.css */
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
 li {
 	list-style: none;
 }
@@ -20,6 +31,12 @@ a:hover {
 	padding-right: 22px;
 	margin: 0 auto;
 }
+
+*:hover {
+	transition: all 0.3s ease;
+}
+
+
 
 /* 
 	=================================
@@ -60,6 +77,11 @@ a:hover {
 }
 
 .btn-register {
+	background: #000;
+	color: #fff;
+}
+
+.btn-register:hover {
 	background: #000;
 	color: #fff;
 }
@@ -157,7 +179,10 @@ a:hover {
 /* User Authentication Bar (small) */
 .auth-menu-small {
 	text-align: center;
-	padding: 5px 0;
+	padding: 5px 37.5px;
+	max-width: 1200px;
+	margin: 0 auto;
+
 }
 
 .auth-menu-small > .col-xs-5 {
@@ -175,6 +200,250 @@ a:hover {
 
 .auth-menu-small a:hover {
 	color: #fff;
+}
+
+/* 
+	=================================
+	Main Shell
+	=================================
+*/
+
+.main-shell {
+	margin-top: 35px;
+}
+
+/* 
+	=================================
+	R1C2 - Sidebar (ads, etc.)
+	=================================
+*/
+
+/* Shared */
+.sidebar-content {
+	width: 300px;
+	margin-bottom: 30px;
+}
+
+.onsite-box {
+	background: url("http://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/201410/deco-stripes.png");
+	padding: 19px;
+}
+
+.onsite-box-header {
+	padding: 3px 9px 0 9px;
+	text-transform: uppercase;
+	font-size: 13.5px;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+.action-list {
+	padding: 22px;
+}
+
+/* Follow Links */
+.follow-header {
+	width: 65%;
+	background-color: #20c3f3;
+	color: #fff;
+}
+
+.social-links {
+	margin: 10px 0;
+}
+
+.social-links ul {
+	padding-top: 5px;
+}
+
+
+.social-links li {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	border: 1px solid white;
+	background-color: #e2e2e2;
+	border-radius: 50%;
+	margin-left: 3px;
+	font-size: 10px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 6.5px;
+}
+
+.social-links li:hover {
+	background-color: #20c3f3;
+	cursor: pointer;
+}
+
+.social-links a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color:#777;
+}
+
+.social-links a:hover {
+	color: #fff;
+}
+
+.follow-email {
+	height: 37.5px;
+	width: 100%;
+	background-color: #fff;
+	padding-top: 5px;
+}
+
+.follow-email > input {
+	border: none;
+	border-bottom: 1px solid #c8c8c8;
+	font-size: 12px;
+	color: #7d7d7d;
+	margin: 0 10px;
+}
+
+.follow-email > button {
+	border-radius: 0;
+	background-color: #20c3f3;
+	width: 74px;
+	height: 20px;
+	padding: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.follow-email > button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+/* Sponsor Ads */
+.sponsor-ad {
+	border: 6px solid #c8c8c8;
+	padding: 20px;
+}
+
+.sponsor-ad a {
+	color: #000;
+}
+
+.sponsor-ad a:hover {
+	text-decoration: underline;
+}
+
+.ad-category {
+	font-size: 12px;
+	font-weight: 900;
+	color: #5a5a5a;
+	text-transform: uppercase;
+}
+
+.sponsored-text {
+	font-size: 10px;
+	font-weight: 700;
+	color: #8f8f8f;
+}
+
+.ad-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 12.5px 0;
+}
+
+.ad-title {
+	font-size: 23px;
+	font-weight: bold;
+	margin-bottom: 7.5px;
+}
+
+.ad-desc {
+	font-size: 16px;
+	color: #5a5a5a;
+}
+
+/* Subscribe Box */
+.subscribe-header {
+	width: 40%;
+	background-color: #ffff00;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 13.5px;
+	font-weight: 700;
+	line-height: 20px;
+	padding: 3px 9px 0 9px;
+}
+
+.whitespace {
+	width: 100%;
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 11px;
+
+}
+
+.subscribe-details {
+	display: block;
+	background-color: #ffff00;
+	width: 90%;
+	margin: 0 auto;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+	padding: 10px;
+}
+
+.subscribe-details h3, h4 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.subscribe-details h3 {
+	color: #5d5d5d;
+}
+
+.subscribe-details h4 {
+	font-weight: 700;
+	color: #4d4d4d;
+}
+
+/* Action Box (Most Shared, Most Read) */
+.action-header {
+	background-color: #20c3f3;
+	width: 50%;
+	color: #fff;
+}
+
+.action-list {
+	margin-top: 10px;
+	background: #fff;
+}
+
+.action-list > li {
+	border-bottom: 1px solid #c8c8c8;
+	margin-bottom: 10px;
+}
+
+.action-list > li > h3 {
+	font-size: 18px;
+	line-height: 20px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.action-list > li > h4 {
+	font-size: 15px;
+	line-height: 20px;
+	color: #7d7d7d;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.action-list > li > h3 > a {
+	color: #505050;
+}
+
+.action-list > li > h3 > a:hover {
+	color: #4099ff;
 }
 
 /* 
