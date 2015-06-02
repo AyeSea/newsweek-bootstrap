@@ -36,8 +36,6 @@ a:hover {
 	transition: all 0.3s ease;
 }
 
-
-
 /* 
 	=================================
 	Top (User Auth Bar + Header)
@@ -248,7 +246,7 @@ a:hover {
 */
 
 /* Shared */
-.feed-header {
+.section-header {
 	/* For News Feed and Big Shot sections */
 	font-weight: 700;
 	color: #fff;
@@ -653,6 +651,63 @@ a:hover {
 
 .action-list > li > h3 > a:hover {
 	color: #4099ff;
+}
+
+/* 
+	=================================
+	R2C1 - Big Shots (solo column)
+	=================================
+*/
+.big-shots > header {
+	margin-top: 15px;
+}
+
+.big-shots-header {
+	min-width: 17.5%;
+	display: inline-block;
+}
+
+#big-shots-desc {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: none;
+	vertical-align: bottom;
+}
+
+#big-shots-img {
+ 	display: block;
+ 	width: 100%;
+ 	margin: 15px 0;
+}
+
+#bs-article-header {
+	font-size: 23px;
+	line-height: 24px;
+}
+
+#bs-article-header > a {
+	color: #000;
+}
+
+#bs-article-header > a:hover {
+	text-decoration: underline;
+}
+
+#bs-article-desc {
+	margin-top: 5px;
+	font-size: 17px;
+	line-height: 19px;
+	color: #5a5a5a
+}
+
+#slideshow-text {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 19px;
+	color: #20c3f3;
 }
 
 /* 
