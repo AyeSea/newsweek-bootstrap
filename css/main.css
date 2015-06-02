@@ -23,6 +23,11 @@ a:hover {
 	text-decoration: none;
 }
 
+blockquote {
+	border-left: none;
+	padding: 30px 15px;
+}
+
 /* Shared */
 
 .fluid-wrap {
@@ -709,6 +714,97 @@ a:hover {
 	line-height: 19px;
 	color: #20c3f3;
 }
+
+/* 
+	=================================
+	R3C1 - Current Week's Issue (solo column)
+	=================================
+*/
+
+#current-week-cover {
+	width: 100%;
+}
+
+.current-week-header {
+	font-size: 15px;
+	display: inline-block;
+	margin-bottom: 15px;
+	width: 25%;
+	text-align: right
+}
+
+#issue-date {
+	display: inline-block;
+	font-size: 15px;
+	background-color: #fff;
+	padding: 0.75px;
+	padding-left: 10px;
+	margin-left: -3px;
+	margin-bottom: 15px;
+}
+
+#current-week-contents {
+	background-color: #fff;
+	padding-bottom: 10px;
+}
+
+#quote-text {
+	font-size: 35px;
+	line-height: 35px;
+	font-style: italic;
+}
+
+#quote-text > a {
+	color: #333;
+}
+
+#quote-ref {
+	font-size: 15px;
+	color: #7d7d7d;
+	line-height: 15px;
+	text-transform: uppercase;
+}
+
+#inside {
+	width: 94%;
+	margin: 0 auto;
+	border-top: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #7d7d7d;
+	text-transform: uppercase;
+}
+
+#current-week-articles {
+	width: 95%;
+	margin: 0 auto;
+}
+
+#current-week-articles > li {
+	margin: 10px 0;
+	background-color: #5a5a5a;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 8px 10px 7px;
+}
+
+#current-week-articles > li > a {
+	color: #fff;
+}
+
+#current-week-articles > li > a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
 
 /* 
 	=================================
